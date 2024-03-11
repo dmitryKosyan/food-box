@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>pizza</title>
+</head>
+
+<body>
+    @@include('blocks/header.html')
+    <div class="wrapper">
+        <main>
+            <section class="product">
+                <div class="container">
+                    <div class="product__container-title">
+                        <h3 class="product__title-line">СУШИ</h3>
+                    </div>
+                    <div class="product__container">
+                        <div class="product__card">
+                            <a href="#">
+                                <img class="product__img" src='../images/bruklin-1-255x255.57557f07.jpg' alt="pizza">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">Ролл Бостон</h3>
+                            </div>
+                            <a class="product__discription-wrap">
+                                Описание товара
+                                <svg width="12" height="6">
+                                    <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                </svg>
+                                <div class="product__discription">
+                                    <span class="discription">Рис, нори, лосось терияки, сыр Филадельфия, огурец, икра
+                                        Тобико. </span>
+                                </div>
+                            </a>
+
+                            <div class="product__add-ingridient">
+                                <a class="product__add-link">
+                                    добавить к блюду
+                                    <svg class="product__link-svg" width="12" height="6">
+                                        <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                    </svg>
+                                </a>
+                                <div class="product__ingridient-container"></div>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class=" product__price ">15.90</div>
+                                <span class=" product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='15.90' style="display:none">15.90</div>
+                                <span class="product__weigth" data-weigth="270">/270 г.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="product__card">
+                            <a href="#">
+                                <img class="product__img" src='../images/california-tempura.jpg' alt="pizza">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">Бонито Классик</h3>
+                            </div>
+                            <a class="product__discription-wrap">
+                                Описание товара
+                                <svg width="12" height="6">
+                                    <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                </svg>
+                                <div class="product__discription">
+                                    <span class="discription">Рис, нори, лосось терияки, сыр Филадельфия, огурец </span>
+                                </div>
+                            </a>
+
+                            <div class="product__add-ingridient">
+                                <a class="product__add-link">
+                                    добавить к блюду
+                                    <svg class="product__link-svg" width="12" height="6">
+                                        <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                    </svg>
+                                </a>
+                                <div class="product__ingridient-container"></div>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class=" product__price ">16.50</div>
+                                <span class=" product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='16.50' style="display:none">16.50</div>
+                                <span class="product__weigth" data-weigth="280">/280 г.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="product__card">
+                            <a href="#">
+                                <img class="product__img" src='../images/zapech-california.jpg' alt="pizza">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">Запеченая Филадельфия</h3>
+                            </div>
+                            <a class="product__discription-wrap">
+                                Описание товара
+                                <svg width="12" height="6">
+                                    <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                </svg>
+                                <div class="product__discription">
+                                    <span class="discription">Рис, нори, лосось терияки, сыр Филадельфия, огурец, икра
+                                        Тобико. </span>
+                                </div>
+                            </a>
+
+                            <div class="product__add-ingridient">
+                                <a class="product__add-link">
+                                    добавить к блюду
+                                    <svg class="product__link-svg" width="12" height="6">
+                                        <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                    </svg>
+                                </a>
+                                <div class="product__ingridient-container"></div>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class=" product__price ">18.90</div>
+                                <span class=" product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='18.90' style="display:none">18.90</div>
+                                <span class="product__weigth" data-weigth="270">/270 г.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="product__card">
+                            <a href="#">
+                                <img class="product__img" src='../images/sushi.png' alt="pizza">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">Филадельфия<br> Premium</h3>
+                            </div>
+                            <a class="product__discription-wrap">
+                                Описание товара
+                                <svg width="12" height="6">
+                                    <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                </svg>
+                                <div class="product__discription">
+                                    <span class="discription">Лосось, сыр Cremette, огурец, рис, нори. </span>
+                                </div>
+                            </a>
+
+                            <div class="product__add-ingridient">
+                                <a class="product__add-link">
+                                    добавить к блюду
+                                    <svg class="product__link-svg" width="12" height="6">
+                                        <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                    </svg>
+                                </a>
+                                <div class="product__ingridient-container"></div>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class=" product__price ">24.70</div>
+                                <span class=" product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='24.70' style="display:none">24.70</div>
+                                <span class="product__weigth" data-weigth="300">/300 г.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="product__card">
+                            <a href="#">
+                                <img class="product__img" src='../images/california-hit.jpg' alt="pizza">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">Филадельфия Классик</h3>
+                            </div>
+                            <a class="product__discription-wrap">
+                                Описание товара
+                                <svg width="12" height="6">
+                                    <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                </svg>
+                                <div class="product__discription">
+                                    <span class="discription">Рис, нори, лосось терияки, сыр Филадельфия, огурец, икра
+                                        Тобико. </span>
+                                </div>
+                            </a>
+
+                            <div class="product__add-ingridient">
+                                <a class="product__add-link">
+                                    добавить к блюду
+                                    <svg class="product__link-svg" width="12" height="6">
+                                        <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                    </svg>
+                                </a>
+                                <div class="product__ingridient-container"></div>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class=" product__price ">12.90</div>
+                                <span class=" product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='12.90' style="display:none">12.90</div>
+                                <span class="product__weigth" data-weigth="270">/270 г.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="product__card">
+                            <a href="#">
+                                <img class="product__img" src='../images/bruklin-1-255x255.57557f07.jpg' alt="pizza">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">Катана</h3>
+                            </div>
+                            <a class="product__discription-wrap">
+                                Описание товара
+                                <svg width="12" height="6">
+                                    <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                </svg>
+                                <div class="product__discription">
+                                    <span class="discription">Рис, нори, лосось терияки, сыр Филадельфия, огурец, икра
+                                        Тобико. </span>
+                                </div>
+                            </a>
+
+                            <div class="product__add-ingridient">
+                                <a class="product__add-link">
+                                    добавить к блюду
+                                    <svg class="product__link-svg" width="12" height="6">
+                                        <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                    </svg>
+                                </a>
+                                <div class="product__ingridient-container"></div>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class=" product__price ">15.90</div>
+                                <span class=" product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='15.90' style="display:none">15.90</div>
+                                <span class="product__weigth" data-weigth="250">/250 г.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+    @@include('blocks/footer.html')
+</body>
+
+</html>

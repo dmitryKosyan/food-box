@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>pizza</title>
+</head>
+
+<body>
+    @@include('blocks/header.html')
+    <div class="wrapper">
+        <main>
+            <section class="product">
+                <div class="container">
+                    <div class="product__container-title">
+                        <h3 class="product__title-line">ПИЦЦА</h3>
+                    </div>
+                    <div class="product__container">
+                        <div class="product__card">
+                            <a href="#">
+                                <img class="product__img" src='../images/chicken-bbq.webp' alt="pizza">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">ветчина и грибы</h3>
+                            </div>
+                            <a class="product__discription-wrap">
+                                Описание товара
+                                <svg width="12" height="6">
+                                    <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                </svg>
+                                <div class="product__discription">
+                                    <span class="discription">соус,сыр,грибы,ветчина,маццарела,памидоры' </span>
+                                </div>
+                            </a>
+                            <div class="product__wrapper">
+                                <ul class="product__item-wrapper">
+                                    <li class="product__variable-item   selected " data-var25sm='25sm'
+                                        data-reset='11.40' data-price="25sm" data-value='11.50' data-weigth="320">
+                                        25см
+                                    </li>
+                                    <li class="product__variable-item" data-price="33sm" data-value='13.40'
+                                        data-weigth="600">33см</li>
+                                    <li class="product__variable-item" data-price="40sm" data-value='16.80'
+                                        data-weigth="900">40см
+                                    </li>
+                                    <li class="product__variable-indicator  " left='px'></li>
+                                </ul>
+                            </div>
+                            <div class="product__add-ingridient">
+                                <a class="product__add-link">
+                                    добавить к блюду
+                                    <svg class="product__link-svg" width="12" height="6">
+                                        <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                    </svg>
+                                </a>
+                                <div class="product__ingridient-container"></div>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class=" product__price ">11.50</div>
+                                <span class=" product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='11.40' style="display:none">11.50</div>
+                                <span class="product__weigth" data-weigth="320">/320 г.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+
+                        <div class="product__card">
+                            <a href="#">
+                                <img class="product__img" src='../images/huwai-alfredo.webp' alt="pizza">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">деревенская</h3>
+                            </div>
+                            <a class="product__discription-wrap">
+                                Описание товара
+                                <svg width="12" height="6">
+                                    <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                </svg>
+                                <div class="product__discription">
+                                    <span class="discription">соус,сыр,грибы,ветчина,маццарела,памидоры' </span>
+                                </div>
+                            </a>
+                            <div class="product__wrapper">
+                                <ul class="product__item-wrapper">
+                                    <li class="product__variable-item   selected " data-var25sm='25sm' data-price="25sm"
+                                        data-value='13.40' data-weigth="320">
+                                        25см
+                                    </li>
+                                    <li class="product__variable-item  " data-price="33sm" data-value='16.70'
+                                        data-weigth="620">33см</li>
+                                    <li class="product__variable-item  " data-price="40sm" data-value='18.20'
+                                        data-weigth="920">40см
+                                    </li>
+                                    <li class="product__variable-indicator  " left='px'></li>
+                                </ul>
+                            </div>
+                            <div class="product__add-ingridient">
+                                <a class="product__add-link">
+                                    добавить к блюду
+                                    <svg class="product__link-svg" width="12" height="6">
+                                        <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                    </svg>
+                                </a>
+                                <div class="product__ingridient-container"></div>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class="product__price ">13.40 </div>
+                                <span class="product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='13.40' style="display:none">13.40</div>
+                                <span class="product__weigth">/350 г.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+
+                        <div class="product__card">
+                            <a href="#">
+                                <img class="product__img" src='../images/julien.webp' alt="pizza">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">четыре сыра</h3>
+                            </div>
+                            <a class="product__discription-wrap">
+                                Описание товара
+                                <svg width="12" height="6">
+                                    <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                </svg>
+                                <div class="product__discription">
+                                    <span class="discription">соус,сыр,грибы,ветчина,маццарела,памидоры' </span>
+                                </div>
+                            </a>
+                            <div class="product__wrapper">
+                                <ul class="product__item-wrapper">
+                                    <li class="product__variable-item   selected " data-var25sm='25sm' data-price="25sm"
+                                        data-value='18.40' data-weigth="420">
+                                        25см
+                                    </li>
+                                    <li class="product__variable-item  " data-price="33sm" data-value='20'
+                                        data-weigth="620">33см</li>
+                                    <li class="product__variable-item  " data-price="33sm" data-value='22.50'
+                                        data-weigth="920">40см
+                                    </li>
+                                    <li class="product__variable-indicator  " left='px'></li>
+                                </ul>
+                            </div>
+                            <div class="product__add-ingridient">
+                                <a class="product__add-link">
+                                    добавить к блюду
+                                    <svg class="product__link-svg" width="12" height="6">
+                                        <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                    </svg>
+                                </a>
+                                <div class="product__ingridient-container"></div>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class="product__price ">18.40</div>
+                                <span class="product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='18.40' style="display:none">18.40</div>
+                                <span class="product__weigth">/420 г.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="product__card" data-name='пицца'>
+                            <a href="#">
+                                <img class="product__img" src='../images/pepperoni.webp' alt="pizza">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">пепперони</h3>
+                            </div>
+                            <a class="product__discription-wrap">
+                                Описание товара
+                                <svg width="12" height="6">
+                                    <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                </svg>
+                                <div class="product__discription">
+                                    <span class="discription">соус,сыр,грибы,ветчина,маццарела,памидоры' </span>
+                                </div>
+                            </a>
+                            <div class="product__wrapper">
+                                <ul class="product__item-wrapper">
+                                    <li class="product__variable-item   selected " data-price="25sm" data-value='15.80'
+                                        data-weigth="320">
+                                        25см
+                                    </li>
+                                    <li class="product__variable-item  " data-var25sm='25sm' data-price="33sm"
+                                        data-value='16.90' data-weigth="600">33см</li>
+                                    <li class="product__variable-item  " data-price="40sm" data-value='18'
+                                        data-weigth="920">40см
+                                    </li>
+                                    <li class="product__variable-indicator  " left='px'></li>
+                                </ul>
+                            </div>
+                            <div class="product__add-ingridient">
+                                <a class="product__add-link">
+                                    добавить к блюду
+                                    <svg class="product__link-svg" width="12" height="6">
+                                        <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                    </svg>
+                                </a>
+                                <div class="product__ingridient-container"></div>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class="product__price ">15.80</div>
+                                <span class="product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='15.80' style="display:none">15.80</div>
+                                <span class="product__weigth">/380 г.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="product__card" data-name='пицца'>
+                            <a href="#">
+                                <img class="product__img" src='../images/vetchina-mashrooms.webp' alt="pizza">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">гавайская</h3>
+                            </div>
+                            <a class="product__discription-wrap">
+                                Описание товара
+                                <svg width="12" height="6">
+                                    <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                </svg>
+                                <div class="product__discription">
+                                    <span class="discription">соус,сыр,грибы,ветчина,маццарела,памидоры' </span>
+                                </div>
+                            </a>
+                            <div class="product__wrapper">
+                                <ul class="product__item-wrapper">
+                                    <li class="product__variable-item   selected " data-var25sm='25sm' data-price="25sm"
+                                        data-value='17.30' data-weigth="320">
+                                        25см
+                                    </li>
+                                    <li class="product__variable-item  " data-price="33sm" data-value='19'
+                                        data-weigth="600">33см</li>
+                                    <li class="product__variable-item  " data-price="40sm" data-value='21'
+                                        data-weigth="940">40см
+                                    </li>
+                                    <li class="product__variable-indicator  " left='px'></li>
+                                </ul>
+                            </div>
+                            <div class="product__add-ingridient">
+                                <a class="product__add-link">
+                                    добавить к блюду
+                                    <svg class="product__link-svg" width="12" height="6">
+                                        <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                    </svg>
+                                </a>
+                                <div class="product__ingridient-container"></div>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class="product__price ">17.30</div>
+                                <span class="product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='17.30' style="display:none">17.30</div>
+                                <span class="product__weigth">/380 г.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="product__card" data-name='пицца'>
+                            <a href="#">
+                                <img class="product__img" src='../images/burger.webp' alt="pizza">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">ветчина и грибы</h3>
+                            </div>
+                            <a class="product__discription-wrap">
+                                Описание товара
+                                <svg width="12" height="6">
+                                    <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                </svg>
+                                <div class="product__discription">
+                                    <span class="discription">соус,сыр,грибы,ветчина,маццарела,памидоры' </span>
+                                </div>
+                            </a>
+                            <div class="product__wrapper">
+                                <ul class="product__item-wrapper">
+                                    <li class="product__variable-item   selected " data-var25sm='25sm' data-price="25sm"
+                                        data-value='15.40' data-weigth="320">
+                                        25см
+                                    </li>
+                                    <li class="product__variable-item  " data-price="33sm" data-value='18.70'
+                                        data-weigth="520">33см</li>
+                                    <li class="product__variable-item  " data-price="40sm" data-value='21'
+                                        data-weigth="820">40см
+                                    </li>
+                                    <li class="product__variable-indicator  " left='px'></li>
+                                </ul>
+                            </div>
+                            <div class="product__add-ingridient">
+                                <a class="product__add-link">
+                                    добавить к блюду
+                                    <svg class="product__link-svg" width="12" height="6">
+                                        <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
+                                    </svg>
+                                </a>
+                                <div class="product__ingridient-container"></div>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class="product__price">15.40</div>
+                                <span class="product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='15.40' style="display:none">15.40</div>
+                                <span class="product__weigth">/320 г.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    @@include('blocks/footer.html')
+</body>
+
+</html>

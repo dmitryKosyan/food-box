@@ -1,0 +1,130 @@
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $black;
+    position: sticky;
+    z-index: 10;
+    position: fixed;
+
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $black;
+
+
+    }
+
+    &__navigation-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    &__navigation-item {
+        font-size: 20px;
+        line-height: 20px;
+        list-style: none;
+        font-family: Roboto;
+        font-size: 15px;
+
+    }
+
+    &__navigation-item a:hover {
+        cursor: pointer;
+        color: $yellow;
+
+    }
+
+    &__link {
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 500;
+        transition: .3s;
+        display: block;
+        height: 100%;
+        width: 100%;
+        color: $wite;
+        letter-spacing: 1px;
+    }
+
+    &__info-list {
+        display: flex;
+        justify-content: space-between;
+        font-family: Roboto;
+        font-size: 14px;
+    }
+
+    &__time-inner {
+        display: flex;
+    }
+
+    &__info-adress {
+        margin-left: 10px;
+
+
+    }
+
+    &__info-time {
+        margin-left: 10px;
+
+    }
+
+    &__info-link {
+        color: $wite;
+    }
+
+    &__info-massenger {
+        margin-left: 10px;
+    }
+
+    &__info-item {
+        display: flex;
+        color: $wite;
+    }
+
+    &__basket-wrap {
+        max-width: 190px;
+        background: $yellow;
+        text-align: center;
+        padding: 23px 40px;
+        position: relative;
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+    &__basket-count {
+        position: absolute;
+        font-size: 16px;
+        top: 40%;
+        left: 51%;
+        border: 2px solid #f54c09;
+        border-radius: 100%;
+        background: $yellow;
+        width: 22px;
+        height: 22px;
+        line-height: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #484641;
+    }
+
+    &__basket-text {
+        color: #484641;
+        font-family: Arial,
+            Helvetica,
+            sans-serif;
+        font-size: 18px;
+    }
+
+    &__logo-img {
+        padding: 10px 0 10px 0;
+    }
+}
