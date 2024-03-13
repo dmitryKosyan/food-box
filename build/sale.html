@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
     <title>pizza</title>
 </head>
@@ -14,9 +17,14 @@
     <header class="header">
     <div class="container">
         <div class="header__inner">
+            <div class="header__burger">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+            </div>
             <a class="header-logo-img" href="../index.html">
                 <div>
-                    <svg width="140" height="80" id="FoodBox__logo" data-name="FoodBox _logo"
+                    <svg class="header__logo" width="140" height="80" id="FoodBox__logo" data-name="FoodBox _logo"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408.3 179.88">
                         <defs>
                             <style>
@@ -129,19 +137,22 @@
                             <a class="header__link" href="../pizza.html">пицца</a>
                         </li>
                         <li class="header__navigation-item" id="sushi">
-                            <a class="header__link" href="../sushi.html">суши</a>
+                            <a class="header__link" href="../foods.html">закуски</a>
                         </li>
                         <li class="header__navigation-item" id="drink">
+                            <a class="header__link" href="../deserts.html">десерты</a>
+                        </li>
+                        <li class="header__navigation-item" id="salat">
+                            <a class="header__link" href="../coffe.html">кофе</a>
+                        </li>
+                        <li class="header__navigation-item" id="salat">
                             <a class="header__link" href="../drink.html">напитки</a>
                         </li>
                         <li class="header__navigation-item" id="salat">
-                            <a class="header__link" href="../salats.html">закуски и салаты</a>
+                            <a class="header__link" href="../sale.html">акции</a>
                         </li>
                         <li class="header__navigation-item" id="salat">
-                            <a class="header__link" href="../salats.html">доставка и оплата</a>
-                        </li>
-                        <li class="header__navigation-item" id="salat">
-                            <a class="header__link" href="../salats.html">блог</a>
+                            <a class="header__link" href="../blog.html">блог</a>
                         </li>
                     </ul>
                 </nav>
@@ -149,6 +160,7 @@
             </div>
             <div class="header__basket-wrap">
                 <img class="header__bascet-img" src="../images/cart.svg" alt="logo">
+                <img class="header__bascet-img2" src="../images/cart2.svg" alt="logo">
                 <div class="header__basket-text ">Корзина</div>
                 <div class="header__basket-count ">0</div>
             </div>
@@ -161,257 +173,81 @@
     <div class="wrapper">
         <main>
             <section class="product">
+                <div class="product__container-title">
+                    <div class="container">
+                        <h3 class="product__title-line">АКЦИИ</h3>
+                    </div>
+                </div>
                 <div class="container">
-                    <div class="product__container-title">
-                        <h3 class="product__title-line">СУШИ</h3>
+                    <div class="section__sale">
+                        <div class="section__row"></div>
+                        <div class="section__inner">
+                            <img class="section__sale-img" src="../images/baner1.jpg" alt="">
+                            <p class="section__sale-text">
+                                Заказывай любые 3 пиццы по 25 см и получай скидку на весь заказ: 29 рублей вместо 37! В
+                                акции участвуют пиццы 1 категории
+                                и пиццы 2 категории. Подробнее в категории <a class="section__sale-link"
+                                    href="./pizza.html">ПИЦЦЫ.</a> *Акция действует как на доставку, так и на
+                                самовывоз. *Акции не
+                                суммируются.
+                            </p>
+                        </div>
+                        <div class="section__row"></div>
                     </div>
-                    <div class="product__container">
-                        <div class="product__card">
-                            <a href="#">
-                                <img class="product__img" src='../images/bruklin-1-255x255.57557f07.jpg' alt="pizza">
-                            </a>
-                            <div class="product__content">
-                                <h3 class="product__title">Ролл Бостон</h3>
-                            </div>
-                            <a class="product__discription-wrap">
-                                Описание товара
-                                <svg width="12" height="6">
-                                    <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
-                                </svg>
-                                <div class="product__discription">
-                                    <span class="discription">Рис, нори, лосось терияки, сыр Филадельфия, огурец, икра
-                                        Тобико. </span>
-                                </div>
-                            </a>
-
-                            <div class="product__add-ingridient">
-                                <a class="product__add-link">
-                                    добавить к блюду
-                                    <svg class="product__link-svg" width="12" height="6">
-                                        <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
-                                    </svg>
-                                </a>
-                                <div class="product__ingridient-container"></div>
-                            </div>
-                            <div class="product__single-variation">
-                                <div class=" product__price ">15.90</div>
-                                <span class=" product__currency">руб.</span>
-                                <div class="product__price-price" data-reset='15.90' style="display:none">15.90</div>
-                                <span class="product__weigth" data-weigth="270">/270 г.</span>
-                            </div>
-                            <div class="product__counter">
-                                <div class="product__count-minus" data-action="minus">-</div>
-                                <div class="product__counter-number" data-counter>1</div>
-                                <div class="product__count-plus" data-action="plus">+</div>
-                                <button class="product__add-tocart">В корзину</button>
-                            </div>
+                    <div class="section__sale">
+                        <div class="section__row"></div>
+                        <div class="section__inner">
+                            <img class="section__sale-img" src="../images/baner2.jpg" alt="">
+                            <p class="section__sale-text">
+                                При заказе на сумму 35 рублей, вы получаете пиццу 25 см в подарок! Все, что вам нужно,
+                                указать промокод А2 и выбрать
+                                пиццу из списка тех, что участвуют в акции: сливочный цыпленок, чоризо перчик, ветчина и
+                                грибы *Акция действует как на
+                                доставку, так и на самовывоз. *Акции не суммируются.
+                            </p>
                         </div>
-                        <div class="product__card">
-                            <a href="#">
-                                <img class="product__img" src='../images/california-tempura.jpg' alt="pizza">
-                            </a>
-                            <div class="product__content">
-                                <h3 class="product__title">Бонито Классик</h3>
-                            </div>
-                            <a class="product__discription-wrap">
-                                Описание товара
-                                <svg width="12" height="6">
-                                    <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
-                                </svg>
-                                <div class="product__discription">
-                                    <span class="discription">Рис, нори, лосось терияки, сыр Филадельфия, огурец </span>
-                                </div>
-                            </a>
-
-                            <div class="product__add-ingridient">
-                                <a class="product__add-link">
-                                    добавить к блюду
-                                    <svg class="product__link-svg" width="12" height="6">
-                                        <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
-                                    </svg>
-                                </a>
-                                <div class="product__ingridient-container"></div>
-                            </div>
-                            <div class="product__single-variation">
-                                <div class=" product__price ">16.50</div>
-                                <span class=" product__currency">руб.</span>
-                                <div class="product__price-price" data-reset='16.50' style="display:none">16.50</div>
-                                <span class="product__weigth" data-weigth="280">/280 г.</span>
-                            </div>
-                            <div class="product__counter">
-                                <div class="product__count-minus" data-action="minus">-</div>
-                                <div class="product__counter-number" data-counter>1</div>
-                                <div class="product__count-plus" data-action="plus">+</div>
-                                <button class="product__add-tocart">В корзину</button>
-                            </div>
-                        </div>
-                        <div class="product__card">
-                            <a href="#">
-                                <img class="product__img" src='../images/zapech-california.jpg' alt="pizza">
-                            </a>
-                            <div class="product__content">
-                                <h3 class="product__title">Запеченая Филадельфия</h3>
-                            </div>
-                            <a class="product__discription-wrap">
-                                Описание товара
-                                <svg width="12" height="6">
-                                    <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
-                                </svg>
-                                <div class="product__discription">
-                                    <span class="discription">Рис, нори, лосось терияки, сыр Филадельфия, огурец, икра
-                                        Тобико. </span>
-                                </div>
-                            </a>
-
-                            <div class="product__add-ingridient">
-                                <a class="product__add-link">
-                                    добавить к блюду
-                                    <svg class="product__link-svg" width="12" height="6">
-                                        <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
-                                    </svg>
-                                </a>
-                                <div class="product__ingridient-container"></div>
-                            </div>
-                            <div class="product__single-variation">
-                                <div class=" product__price ">18.90</div>
-                                <span class=" product__currency">руб.</span>
-                                <div class="product__price-price" data-reset='18.90' style="display:none">18.90</div>
-                                <span class="product__weigth" data-weigth="270">/270 г.</span>
-                            </div>
-                            <div class="product__counter">
-                                <div class="product__count-minus" data-action="minus">-</div>
-                                <div class="product__counter-number" data-counter>1</div>
-                                <div class="product__count-plus" data-action="plus">+</div>
-                                <button class="product__add-tocart">В корзину</button>
-                            </div>
-                        </div>
-                        <div class="product__card">
-                            <a href="#">
-                                <img class="product__img" src='../images/sushi.png' alt="pizza">
-                            </a>
-                            <div class="product__content">
-                                <h3 class="product__title">Филадельфия<br> Premium</h3>
-                            </div>
-                            <a class="product__discription-wrap">
-                                Описание товара
-                                <svg width="12" height="6">
-                                    <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
-                                </svg>
-                                <div class="product__discription">
-                                    <span class="discription">Лосось, сыр Cremette, огурец, рис, нори. </span>
-                                </div>
-                            </a>
-
-                            <div class="product__add-ingridient">
-                                <a class="product__add-link">
-                                    добавить к блюду
-                                    <svg class="product__link-svg" width="12" height="6">
-                                        <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
-                                    </svg>
-                                </a>
-                                <div class="product__ingridient-container"></div>
-                            </div>
-                            <div class="product__single-variation">
-                                <div class=" product__price ">24.70</div>
-                                <span class=" product__currency">руб.</span>
-                                <div class="product__price-price" data-reset='24.70' style="display:none">24.70</div>
-                                <span class="product__weigth" data-weigth="300">/300 г.</span>
-                            </div>
-                            <div class="product__counter">
-                                <div class="product__count-minus" data-action="minus">-</div>
-                                <div class="product__counter-number" data-counter>1</div>
-                                <div class="product__count-plus" data-action="plus">+</div>
-                                <button class="product__add-tocart">В корзину</button>
-                            </div>
-                        </div>
-                        <div class="product__card">
-                            <a href="#">
-                                <img class="product__img" src='../images/california-hit.jpg' alt="pizza">
-                            </a>
-                            <div class="product__content">
-                                <h3 class="product__title">Филадельфия Классик</h3>
-                            </div>
-                            <a class="product__discription-wrap">
-                                Описание товара
-                                <svg width="12" height="6">
-                                    <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
-                                </svg>
-                                <div class="product__discription">
-                                    <span class="discription">Рис, нори, лосось терияки, сыр Филадельфия, огурец, икра
-                                        Тобико. </span>
-                                </div>
-                            </a>
-
-                            <div class="product__add-ingridient">
-                                <a class="product__add-link">
-                                    добавить к блюду
-                                    <svg class="product__link-svg" width="12" height="6">
-                                        <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
-                                    </svg>
-                                </a>
-                                <div class="product__ingridient-container"></div>
-                            </div>
-                            <div class="product__single-variation">
-                                <div class=" product__price ">12.90</div>
-                                <span class=" product__currency">руб.</span>
-                                <div class="product__price-price" data-reset='12.90' style="display:none">12.90</div>
-                                <span class="product__weigth" data-weigth="270">/270 г.</span>
-                            </div>
-                            <div class="product__counter">
-                                <div class="product__count-minus" data-action="minus">-</div>
-                                <div class="product__counter-number" data-counter>1</div>
-                                <div class="product__count-plus" data-action="plus">+</div>
-                                <button class="product__add-tocart">В корзину</button>
-                            </div>
-                        </div>
-                        <div class="product__card">
-                            <a href="#">
-                                <img class="product__img" src='../images/bruklin-1-255x255.57557f07.jpg' alt="pizza">
-                            </a>
-                            <div class="product__content">
-                                <h3 class="product__title">Катана</h3>
-                            </div>
-                            <a class="product__discription-wrap">
-                                Описание товара
-                                <svg width="12" height="6">
-                                    <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
-                                </svg>
-                                <div class="product__discription">
-                                    <span class="discription">Рис, нори, лосось терияки, сыр Филадельфия, огурец, икра
-                                        Тобико. </span>
-                                </div>
-                            </a>
-
-                            <div class="product__add-ingridient">
-                                <a class="product__add-link">
-                                    добавить к блюду
-                                    <svg class="product__link-svg" width="12" height="6">
-                                        <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
-                                    </svg>
-                                </a>
-                                <div class="product__ingridient-container"></div>
-                            </div>
-                            <div class="product__single-variation">
-                                <div class=" product__price ">15.90</div>
-                                <span class=" product__currency">руб.</span>
-                                <div class="product__price-price" data-reset='15.90' style="display:none">15.90</div>
-                                <span class="product__weigth" data-weigth="250">/250 г.</span>
-                            </div>
-                            <div class="product__counter">
-                                <div class="product__count-minus" data-action="minus">-</div>
-                                <div class="product__counter-number" data-counter>1</div>
-                                <div class="product__count-plus" data-action="plus">+</div>
-                                <button class="product__add-tocart">В корзину</button>
-                            </div>
-                        </div>
-
-
+                        <div class="section__row"></div>
                     </div>
-
+                    <div class="section__sale-info">
+                        <h3 class="section__sale-title">САМАЯ ВКУСНАЯ ПИЦЦА ПО АКЦИИ В FOOD-BOX!</h3>
+                        <p class="section__sale-description">
+                            Съесть пиццу – это всегда удовольствие, но купить ее по акции – это самый настоящий
+                            праздник! Thebox99 знает это, как
+                            никто другой! Именно поэтому у нас есть классная бонусная программа по карте лояльности.
+                            Заполнить ее вы можете у нас в
+                            пиццерии и получать от 5 до 10% баллами с каждого заказа. Первая категория гостя – silver.
+                            Она дает право накапливать
+                            бонусы в размере 5%. На данной этапе сумма ваших заказов достигает 150 BYN. Как только она
+                            становится больше, вы
+                            переходите в новую категорию клиента – gold. Теперь бонусы зачисляются на вашу карту в
+                            размере 7%. Но как только сумма
+                            ваших заказов превышает 300 BYN, вы получаете бонусы в размере 10% и становитесь нашим
+                            гостем категории platinum. Вы
+                            видите, как просто экономить вместе с нами?
+                        </p>
+                    </div>
+                    <div class="section__sale-info">
+                        <h3 class="section__sale-title">
+                            ЗАКАЗАТЬ ПИЦЦУ С ДОСТАВКОЙ ПО АКЦИИ ТЕПЕРЬ МОЖНО В НЕСКОЛЬКО КЛИКОВ
+                        </h3>
+                        <p class="section__sale-description">
+                            У нас есть три удобных способа доставки. Если вы дома и под рукой у вас лежит ноутбук, то
+                            смело открывайте и делайте
+                            заказ на нашем сайте. Вы не успеете утонуть в своих мечтах об ароматной и сочной пицце, ведь
+                            мы быстро доставим ее по
+                            нужному адресу. Второй способ – заказ по номеру телефона. Даже если у вас нет доступа в
+                            интернет, мы не оставим вас без
+                            ароматного блюда. И третий способ – заказ через мессенджеры. Всего несколько кликов по
+                            клавиатуре, и мы уже начинаем
+                            готовить ваш заказ. Мы докажем вам, что пицца по акции – это реально вкусно! Food-box –
+                            попробовать, чтобы влюбиться.
+                        </p>
+                    </div>
                 </div>
             </section>
         </main>
     </div>
+
     <footer class="footer">
     <div class="footer__wrapper">
         <div class="footer__map" id="map">
@@ -460,6 +296,7 @@
             </a>
         </div>
     </div>
+    <div class="footer__copyrigth">developer by Косьянчик Д.Е.</div>
 </footer>
 </body>
 

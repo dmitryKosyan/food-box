@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>pizza</title>
+</head>
+
+<body>
+    @@include('blocks/header.html')
+    <div class="wrapper">
+        <main>
+            <section class="blog">
+                <div class="product__container-title">
+                    <div class="container">
+                        <h3 class="product__title-line">БЛОГ</h3>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="blog__wrapper">
+                        <div class="blog__card">
+                            <img class="blog__card-img" src="../images/blog1.jpg" alt="blog-img">
+
+                            <h2 class="blog__card-title">
+                                Выбираем напитки к пицце: что пьют в других странах?
+                            </h2>
+                            <a href="./blog1.html" class="blog__card-link">подробнее</a>
+
+                        </div>
+                        <div class="blog__card">
+                            <img class="blog__card-img" src="../images/blog3.jpg" alt="blog-img">
+
+                            <h2 class="blog__card-title">
+                                Шоколадный фондан — популярное французское десертное блюдо, кекс из шоколадного
+                                бисквитного теста.
+                            </h2>
+                            <a href="./blog2.html" class="blog__card-link">подробнее</a>
+
+                        </div>
+                        <div class="blog__card">
+                            <img class="blog__card-img" src="../images/blog2.jpg" alt="blog-img">
+
+                            <h2 class="blog__card-title">
+                                Идеальное решение вашего вечера — заказать пиццу с доставкой на дом и не готовить
+                            </h2>
+                            <a href="./blog3.html" class="blog__card-link">подробнее</a>
+                        </div>
+
+                    </div>
+                </div>
+        </main>
+    </div>
+
+    @@include('blocks/footer.html')
+</body>
+
+</html>

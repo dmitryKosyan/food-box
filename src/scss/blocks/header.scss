@@ -7,6 +7,17 @@
     z-index: 10;
     position: fixed;
 
+    &__burger {
+        display: none;
+    }
+
+    &__burger-line {
+        width: 40px;
+        height: 2px;
+        background-color: $wite;
+        margin-bottom: 8px;
+        display: block;
+    }
 
     &__inner {
         display: flex;
@@ -43,7 +54,7 @@
     }
 
     &__link {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 18px;
         font-weight: 500;
         transition: .3s;
@@ -59,6 +70,7 @@
         justify-content: space-between;
         font-family: Roboto;
         font-size: 14px;
+        margin-bottom: 18px;
     }
 
     &__time-inner {
@@ -127,4 +139,69 @@
     &__logo-img {
         padding: 10px 0 10px 0;
     }
+
+    &__bascet-img2 {
+        display: none;
+    }
+}
+
+@media (max-width:1014px) {
+    .header {
+        &__burger {
+            display: block;
+        }
+
+        &__info {
+            display: none;
+        }
+
+        &__basket-wrap {
+            padding: 7px 17px;
+        }
+
+        &__basket-count {
+            top: 34%;
+
+        }
+    }
+}
+
+@media (max-width:900px) {
+    .header {
+
+        &__basket-wrap {
+            padding: 7px 17px;
+            background-color: transparent;
+        }
+
+
+
+        &__bascet-img {
+            display: none;
+        }
+
+        &__bascet-img2 {
+            display: block;
+        }
+
+        &__basket-text {
+            display: none;
+        }
+
+        &__basket-count {
+            top: 50%;
+            left: 70%
+        }
+
+        &__logo {
+            width: 100px;
+        }
+
+        &__inner {
+            padding: 0 15px;
+        }
+    }
+
+
+
 }

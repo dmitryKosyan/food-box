@@ -1,0 +1,58 @@
+@import 'blocks/_global';
+@import 'blocks/_reset';
+@import 'blocks/_vars';
+
+.section {
+    &__inner {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__sale {
+        padding: 15px 0;
+    }
+
+    &__sale-img {
+        width: 540px;
+        height: 250px;
+    }
+
+    &__row {
+        height: 1px;
+        width: 100%;
+        background-color: #bdbdbdc2;
+        margin-top: 24px;
+        margin-bottom: 24px;
+
+    }
+
+    &__sale-text {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        color: $wite;
+        line-height: 34px;
+    }
+
+    &__sale-link {
+        color: $yellow;
+    }
+
+    &__sale-title {
+        font-family: Roboto;
+        font-size: 40px;
+        font-weight: 600;
+        color: $wite;
+    }
+
+    &__sale-description {
+        font-family: Roboto;
+        font-size: 18px;
+        line-height: 24px;
+        color: $wite;
+    }
+
+    &__sale-info {
+        margin-bottom: 40px;
+    }
+}

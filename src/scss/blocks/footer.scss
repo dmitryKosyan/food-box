@@ -1,0 +1,67 @@
+.footer {
+    background-color: $black;
+
+    &__wrapper {
+        margin: 30px 100px 30px 100px;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    &__map {
+        width: 600px;
+
+    }
+
+    &__title {
+        display: block;
+        width: 100%;
+        color: $yellow;
+        font-size: 18px;
+        line-height: 26px;
+        font-family: Roboto;
+    }
+
+    &__info {
+        margin-bottom: 20px;
+    }
+
+    &__phone-number:hover {
+        text-decoration: none;
+    }
+
+    &__phone-number {
+        margin-right: 5px;
+        font-size: 24px;
+        line-height: 32px;
+        color: $wite;
+    }
+
+    &__icon-link {
+        position: relative;
+        top: 4px;
+        left: 5px;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        font-family: Oswald,
+            sans-serif;
+        color: $wite;
+    }
+
+    &__image-pay {
+        max-width: 460px;
+        position: relative;
+        left: -37px;
+    }
+
+    &__copyrigth {
+        padding: 40px 0;
+        text-align: center;
+        background-color: $black;
+        color: $wite;
+        font-family: Roboto;
+        font-size: 12px;
+    }
+}

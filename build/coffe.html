@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>pizza</title>
+</head>
+
+<body>
+    <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__burger">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+            </div>
+            <a class="header-logo-img" href="../index.html">
+                <div>
+                    <svg class="header__logo" width="140" height="80" id="FoodBox__logo" data-name="FoodBox _logo"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408.3 179.88">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #ebbe0a;
+                                    ;
+                                    fill-rule: evenodd;
+                                    width: 50px;
+                                    height: 50px;
+                                }
+
+                                .cls-2 {
+                                    fill: #ebbe0a
+                                }
+                            </style>
+                        </defs>
+                        <title>FoodBox</title>
+                        <path class="cls-1"
+                            d="M154.36,312.52c3.3,0,4.9-.6,4.9-4.1v-23h21.6c3.2,0,4.9-.5,5.2-3.3l.3-2.3c.3-2.7-1.1-3.1-4.4-3.1h-22.8v-20.1h29.1c3.2,0,4.8-.5,5.2-3.3l.3-2.6c.3-2.7-1.2-3.3-4.4-3.3h-35c-3.3,0-5.5,1.3-5.5,4.8v56.2c0,3.5,1.5,4.1,4.8,4.1Zm65.9.9c14.8,0,25.2-10.5,25.2-25.2s-10.4-25.4-25.1-25.4c-14.9,0-25.3,10.5-25.3,25.2,0,14.9,10.3,25.4,25.2,25.4Zm0-8.1c-9.2,0-16.1-7.4-16.1-17.3s6.9-17.1,16.1-17.1,16,7.3,16,17.3c0,9.8-6.8,17.1-16,17.1Zm56.8,8.1c14.8,0,25.2-10.5,25.2-25.2s-10.4-25.4-25.1-25.4c-14.9,0-25.3,10.5-25.3,25.2,0,14.9,10.3,25.4,25.2,25.4Zm0-8.1c-9.2,0-16.1-7.4-16.1-17.3s6.9-17.1,16.1-17.1,16,7.3,16,17.3c0,9.8-6.8,17.1-16,17.1Zm71-15.4a14.86,14.86,0,0,1-15,15.3c-8.6,0-14.8-7.1-14.8-17.1,0-10.3,6-17.1,15-17.1,7.4,0,14.8,5,14.8,16v2.9Zm-.1,14.4c.6,7.8,3.6,8.1,6.4,8.1,2,0,3.6-.5,3.6-2.7v-61.8c0-3.6-1.8-3.7-4.4-3.7h-1.1c-2.5,0-4.4.1-4.4,3.7V271c-2.7-4.4-8.6-8.2-16.6-8.2-13.3,0-22.8,10.1-22.8,25.3s9.6,25.3,22.5,25.3A19.11,19.11,0,0,0,348,304.32Z"
+                            transform="translate(-148.86 -190.08)" />
+                        <path class="cls-2"
+                            d="M382.66,308.9h21.1c16.9,0,24.6-6,24.6-18.1,0-7.6-4.4-13.7-14-15.9,7.4-2.2,11.4-6.9,11.4-13.9,0-10.9-7.7-16.8-21.8-16.8h-21.3c-3.3,0-5.5,1.3-5.5,4.8v55.1c0,3.5,2.2,4.8,5.5,4.8Zm4.7-8.3V279.8h16.5c9.6,0,13.9,3.4,13.9,10.2,0,7.5-3.8,10.6-14.2,10.6Zm0-28.2V252.5H403c8.4,0,12.1,3.3,12.1,9.7,0,6.2-4.3,10.2-11.9,10.2Zm72.7,37.8c14.8,0,25.2-10.5,25.2-25.2s-10.4-25.4-25.1-25.4c-14.9,0-25.3,10.5-25.3,25.2,0,14.9,10.3,25.4,25.2,25.4Zm0-8.1c-9.2,0-16.1-7.4-16.1-17.3s6.9-17.1,16.1-17.1,16,7.3,16,17.3c0,9.8-6.8,17.1-16,17.1Zm52.6-12c0-.1,10.7,15.2,10.7,15.2,2.7,3.8,3.8,4.1,7.1,4.1,2.5,0,6-1.6,4.2-4l-15.4-20.5,15.5-20.6c1.8-2.4-1.7-4-4.2-4-3.3,0-4.4.3-7,4.1l-10.5,15.3-10.7-15.3c-2.7-3.8-3.7-4.1-7-4.1-2.5,0-6.1,1.7-4.2,4l15.4,20.6L491,305.4c-1.8,2.4,1.7,4,4.2,4,3.3,0,4.5-.4,7.1-4.2Z"
+                            transform="translate(-148.86 -190.08)" />
+                        <path class="cls-1"
+                            d="M377.28,230.64c1.56,5.4,8,3.48,8,0V198.86H548.13V361.68H385.31v-37.2c-.47-4.2-8-3.72-8,0V370H557.16V190.08H377.28Z"
+                            transform="translate(-148.86 -190.08)" />
+                    </svg>
+                </div>
+            </a>
+            <div class="header__info">
+                <div class="header__info-list">
+                    <div class="header__info-item">
+                        <div class="header__time-inner">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.0003 23.8337C7.01708 23.8337 2.16699 18.9836 2.16699 13.0003C2.16699 7.01708 7.01708 2.16699 13.0003 2.16699C18.9836 2.16699 23.8337 7.01708 23.8337 13.0003C23.8337 18.9836 18.9836 23.8337 13.0003 23.8337ZM13.0003 21.667C15.2989 21.667 17.5033 20.7539 19.1286 19.1286C20.7539 17.5033 21.667 15.2989 21.667 13.0003C21.667 10.7018 20.7539 8.49738 19.1286 6.87207C17.5033 5.24675 15.2989 4.33366 13.0003 4.33366C10.7018 4.33366 8.49738 5.24675 6.87207 6.87207C5.24675 8.49738 4.33366 10.7018 4.33366 13.0003C4.33366 15.2989 5.24675 17.5033 6.87207 19.1286C8.49738 20.7539 10.7018 21.667 13.0003 21.667ZM14.0837 13.0003H18.417V15.167H11.917V7.58366H14.0837V13.0003Z"
+                                    fill="#fdbf00"></path>
+                            </svg>
+                            <time class="header__info-time">Время доставки<br>с 11:00 до 23:00</time>
+                        </div>
+                    </div>
+                    <div class="header__info-item">
+                    </div>
+                    <div class="header__info-item">
+                        <svg width="15" height="15" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21.6303 4.5206C19.6454 1.6479 16.4996 0 13.0002 0C9.50086 0 6.35511 1.6479 4.37022 4.5206C2.39509 7.37877 1.93902 10.9973 3.14782 14.1942C3.47114 15.0673 3.9851 15.9155 4.67176 16.7103L12.3081 25.68C12.4809 25.883 12.7339 26 13.0002 26C13.2666 26 13.5196 25.8831 13.6923 25.68L21.3266 16.7127C22.0163 15.9133 22.5296 15.066 22.8502 14.2C24.0615 10.9973 23.6054 7.37877 21.6303 4.5206ZM21.1478 13.5633C20.9006 14.2315 20.4969 14.8921 19.9487 15.5275C19.9472 15.5291 19.9457 15.5306 19.9445 15.5324L13.0002 23.6888L6.05174 15.5273C5.50386 14.8924 5.1002 14.2319 4.85051 13.5573C3.85083 10.9133 4.23022 7.92152 5.86568 5.55455C7.50627 3.18002 10.1069 1.81817 13.0002 1.81817C15.8936 1.81817 18.4939 3.17997 20.1345 5.55455C21.7703 7.92152 22.15 10.9133 21.1478 13.5633Z"
+                                fill="#fdbf00"></path>
+                            <path
+                                d="M13.0001 5.39404C10.1931 5.39404 7.90918 7.67768 7.90918 10.485C7.90918 13.2923 10.1928 15.5759 13.0001 15.5759C15.8074 15.5759 18.091 13.2923 18.091 10.485C18.091 7.67798 15.8071 5.39404 13.0001 5.39404ZM13.0001 13.7577C11.1955 13.7577 9.72735 12.2895 9.72735 10.4849C9.72735 8.68035 11.1955 7.21216 13.0001 7.21216C14.8047 7.21216 16.2729 8.68035 16.2729 10.4849C16.2729 12.2895 14.8047 13.7577 13.0001 13.7577Z"
+                                fill="#fdbf00"></path>
+                        </svg>
+                        <div class="header__info-adress">Беларусь,г.Гомель,<br>ул.Катунина д.7</div>
+
+                    </div>
+                    <div class="header__info-item">
+                        <a href="" class="header__info-link">+375(293)04-30-78</a>
+                    </div>
+
+                    <div class="header__info-item">
+                        <span>
+                            заказать через <br>мессенджеры
+                        </span>
+                        <a class="header__info-massenger" href="">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path
+                                        d="M25.8065 1.04186C25.5815 0.78999 25.2266 0.722451 24.9326 0.850927L0.456202 11.5657C0.185032 11.6845 0.00679133 11.9501 0.000189818 12.2467C-0.00641169 12.5427 0.159642 12.8159 0.425733 12.9469L6.2701 15.8211L7.72649 24.5585C7.77372 24.8901 8.03423 25.1567 8.37344 25.2049C8.61719 25.24 8.85941 25.1541 9.02699 24.9815L13.6409 20.3675L20.2252 25.0709C20.4364 25.2212 20.7086 25.2542 20.9483 25.1592C21.1885 25.0643 21.3642 24.8535 21.415 24.6001L25.9852 1.69795C26.0304 1.47096 25.972 1.22772 25.8065 1.04186ZM6.87338 14.4201L2.5697 12.3035L19.5721 4.86058L6.87338 14.4201ZM9.25703 16.6844L8.54864 20.2264L7.78438 15.6408L17.1265 8.60821L9.46472 16.2959C9.35707 16.4036 9.28547 16.5437 9.25703 16.6844ZM9.72066 22.1332L10.5199 18.1383L12.3841 19.4697L9.72066 22.1332ZM20.1515 23.1458L11.1771 16.7357L23.9977 3.87239L20.1515 23.1458Z"
+                                        fill="#fdbf00"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="26" height="26" fill="white"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a class="header__info-massenger" href="">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path
+                                        d="M21.1016 2.68543C19.2045 0.825516 16.1373 -0.0756817 11.9839 0.00552437C7.79585 0.0878936 4.99636 0.822978 3.17377 2.31895C1.41155 3.76522 0.59082 5.88155 0.59082 8.97912V12.1404C0.59082 15.7973 2.55034 19.8175 6.29544 20.4258C6.7278 20.4965 7.1351 20.2026 7.20531 19.7701C7.27552 19.3379 6.98199 18.9305 6.54964 18.8603C3.70943 18.3989 2.17688 15.0537 2.17688 12.1404V8.97912C2.17688 4.53752 3.82268 1.7523 12.015 1.59116C15.729 1.51757 18.4096 2.26735 19.991 3.81788C21.2234 5.02635 21.8225 6.71454 21.8225 8.97912V12.1404C21.8225 16.9276 19.6738 19.0391 14.1628 19.6608H10.255C10.0447 19.6608 9.84292 19.7443 9.69426 19.8931L6.94076 22.6466C6.63105 22.9563 6.63105 23.4584 6.94076 23.7681C7.09556 23.9229 7.29857 24.0005 7.50148 24.0005C7.70439 24.0005 7.90741 23.9231 8.0622 23.7681L10.5835 21.2468H14.2071C14.2363 21.2468 14.2656 21.2453 14.2947 21.242C17.4486 20.8917 19.6084 20.0708 21.0913 18.6586C22.6506 17.1736 23.4087 15.0416 23.4087 12.1403V8.97912C23.4087 6.30407 22.6325 4.18658 21.1016 2.68543Z"
+                                        fill="#fdbf00"></path>
+                                    <path
+                                        d="M12.4943 5.18043C12.4944 5.18043 12.4944 5.18043 12.4946 5.18043C13.7725 5.18043 14.9738 5.67814 15.8775 6.58177C16.7812 7.4855 17.2789 8.6871 17.2788 9.96514C17.2788 10.4031 17.6338 10.7582 18.0717 10.7582C18.0718 10.7582 18.0718 10.7582 18.0718 10.7582C18.5098 10.7582 18.8649 10.4032 18.8649 9.96525C18.865 8.26352 18.2023 6.66361 16.999 5.46032C15.7958 4.25703 14.1963 3.59448 12.4946 3.59448C12.4945 3.59448 12.4942 3.59448 12.4941 3.59448C12.0561 3.59448 11.7012 3.94955 11.7012 4.38751C11.7013 4.82537 12.0563 5.18043 12.4943 5.18043Z"
+                                        fill="#fdbf00"></path>
+                                    <path
+                                        d="M12.4941 7.96838C13.5946 7.96859 14.4901 8.86397 14.4902 9.96438C14.4903 10.4023 14.8453 10.7574 15.2833 10.7573C15.7214 10.7573 16.0764 10.4021 16.0763 9.96417C16.0759 7.98942 14.4692 6.38264 12.4943 6.38232H12.4942C12.0562 6.38232 11.7013 6.73728 11.7012 7.17525C11.7012 7.61321 12.0561 7.96838 12.4941 7.96838Z"
+                                        fill="#fdbf00"></path>
+                                    <path
+                                        d="M8.9387 9.32765C8.57719 9.57486 8.48446 10.0683 8.73156 10.4299C8.97867 10.7914 9.47225 10.884 9.83377 10.6369C10.1181 10.4425 10.784 9.98724 10.7373 9.07705C10.7077 8.53229 10.2163 7.75449 9.80934 7.19789C9.21404 6.3835 8.701 5.89299 8.28768 5.74094C7.90174 5.59724 7.49814 5.59418 7.08724 5.73206C6.23617 6.01882 5.61824 6.53703 5.30039 7.23067C4.9909 7.90591 4.99777 8.68191 5.32038 9.47526C6.08232 11.3445 7.149 12.981 8.49788 14.3463C9.85608 15.6879 11.4925 16.7546 13.3624 17.517C13.7671 17.6816 14.1674 17.764 14.5522 17.764C14.9212 17.764 15.276 17.6883 15.6065 17.5368C16.3001 17.2188 16.8182 16.601 17.1053 15.7489C17.2428 15.3389 17.2397 14.9355 17.0972 14.5522C16.9441 14.1359 16.4534 13.623 15.6392 13.0277C15.0825 12.6207 14.3047 12.1294 13.7578 12.0997C12.8495 12.054 12.3946 12.7187 12.2003 13.0031C11.9531 13.3646 12.0456 13.8581 12.4071 14.1054C12.7687 14.3527 13.2621 14.2601 13.5094 13.8986C13.5957 13.7724 13.645 13.7151 13.6732 13.69C14.1183 13.8327 15.3877 14.7653 15.6162 15.1227C15.6218 15.1455 15.6231 15.1803 15.6019 15.2436C15.5019 15.5407 15.3068 15.9295 14.9457 16.095C14.6075 16.2498 14.2231 16.1549 13.9607 16.0482C12.2851 15.365 10.8222 14.4129 9.61933 13.2247C8.4244 12.0152 7.47223 10.5523 6.78949 8.87732C6.68248 8.61424 6.58743 8.22968 6.74233 7.89174C6.90781 7.53065 7.29671 7.33546 7.59277 7.23564C7.656 7.21449 7.69079 7.21566 7.7149 7.22147C8.0724 7.45039 9.00447 8.71903 9.14722 9.16429C9.12205 9.19209 9.06485 9.24147 8.9387 9.32765Z"
+                                        fill="#fdbf00"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="24" height="24" fill="white"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__navigation-items">
+                        <li class="header__navigation-item" id="pizza">
+                            <a class="header__link" href="../pizza.html">пицца</a>
+                        </li>
+                        <li class="header__navigation-item" id="sushi">
+                            <a class="header__link" href="../foods.html">закуски</a>
+                        </li>
+                        <li class="header__navigation-item" id="drink">
+                            <a class="header__link" href="../deserts.html">десерты</a>
+                        </li>
+                        <li class="header__navigation-item" id="salat">
+                            <a class="header__link" href="../coffe.html">кофе</a>
+                        </li>
+                        <li class="header__navigation-item" id="salat">
+                            <a class="header__link" href="../drink.html">напитки</a>
+                        </li>
+                        <li class="header__navigation-item" id="salat">
+                            <a class="header__link" href="../sale.html">акции</a>
+                        </li>
+                        <li class="header__navigation-item" id="salat">
+                            <a class="header__link" href="../blog.html">блог</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="header__basket-wrap">
+                <img class="header__bascet-img" src="../images/cart.svg" alt="logo">
+                <img class="header__bascet-img2" src="../images/cart2.svg" alt="logo">
+                <div class="header__basket-text ">Корзина</div>
+                <div class="header__basket-count ">0</div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+</header>
+    <div class="wrapper">
+        <main>
+            <section class="product">
+                <div class="product__container-title">
+                    <div class="container">
+                        <h3 class="product__title-line">КОФЕ</h3>
+                    </div>
+                </div>
+                <div class="container">
+
+                    <div class="product__container">
+                        <div class="product__card">
+                            <a href="#">
+                                <img class="product__img" src='../images/americano.webp' alt="cola">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">Кофе Американо</h3>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class=" product__price ">2.50</div>
+                                <span class=" product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='2.40' style="display:none">2.50</div>
+                                <span class="product__weigth" data-weigth="0.5">/0.25 л.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="product__card">
+                            <a href="#">
+                                <img class="product__img" src='../images/capuchino.webp' alt="fanta">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title"> Кофе Капучино</h3>
+                            </div>
+                            <div class="product__add-ingridient">
+                                <div class="product__ingridient-container"></div>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class=" product__price ">2.50</div>
+                                <span class=" product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='2.50' style="display:none">2.50</div>
+                                <span class="product__weigth" data-weigth="0.5">/0.25 л.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="product__card">
+                            <a href="#">
+                                <img class="product__img" src='../images/caramel-capuchino.webp' alt="sprite">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">Кофе Карамельный капучино</h3>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class=" product__price ">2.50</div>
+                                <span class=" product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='2.50' style="display:none">2.50</div>
+                                <span class="product__weigth" data-weigth="0.5">/0.25 л.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="product__card">
+                            <a href="#">
+                                <img class="product__img" src='../images/latte.webp' alt="bonaqua">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">Кофе Латте</h3>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class=" product__price ">1.70</div>
+                                <span class=" product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='1.70' style="display:none">1.70</div>
+                                <span class="product__weigth" data-weigth="0.5">/0.5 л.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="product__card">
+                            <a href="#">
+                                <img class="product__img" src='../images/coconun-latte.webp' alt="ТОНІК">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">Кофе Кокосовый Латте</h3>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class=" product__price ">3.70</div>
+                                <span class=" product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='3.70' style="display:none">3.70</div>
+                                <span class="product__weigth" data-weigth="0.5">/0.25 л.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="product__card">
+                            <a href="#">
+                                <img class="product__img" src='../images/nut-latte.webp' alt="SANDORA">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">Кофе Ореховый латте</h3>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class=" product__price ">5.40</div>
+                                <span class=" product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='5.40' style="display:none">5.40</div>
+                                <span class="product__weigth" data-weigth="1">/0.25 л.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+    <div class="footer__wrapper">
+        <div class="footer__map" id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2030.6695511395812!2d31.000158775919818!3d52.42476334327713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d4684d82db0f8b%3A0x775cb2b0bd7fbd0c!2z0YPQu9C40YbQsCDQmtCw0YLRg9C90LjQvdCwIDcsINCT0L7QvNC10LvRjCwg0JPQvtC80LXQu9GM0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e1!3m2!1sru!2sby!4v1710155969593!5m2!1sru!2sby"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer__info-wrap">
+            <div class="footer__info">
+                <div class="footer__title">Адресс</div>
+                <span class="footer__subtitle">Беларусь,г.Гомель,ул.Катунина 7</span>
+            </div>
+            <div class="footer__info">
+                <div class="footer__title">Время работы</div>
+                <span class="footer__subtitle">c 10:00 до 23:00</span>
+            </div>
+            <div class="footer__info">
+                <div class="footer__title">Время работы доставки</div>
+                <span class="footer__subtitle">c 11:00 до 23:00</span>
+            </div>
+            <div class="footer__title">Доставка:</div>
+            <div class="footer__phone">
+                <a class="footer__phone-number" href="tel:+375293093028">+375(29)3093028
+                    <svg class="footer__icon-link" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.5 0C19.4035 0 25 5.59646 25 12.5C25 19.4035 19.4035 25 12.5 25C5.59646 25 0 19.4035 0 12.5C0 5.59646 5.59646 0 12.5 0ZM15.8303 10.9158C15.7695 10.4219 15.6177 10.0341 15.3481 9.69057C14.998 9.24823 14.5506 8.98339 13.8883 8.82625C13.4567 8.72151 13.2822 8.73354 13.1261 8.87615C12.9807 9.00974 12.9523 9.2776 13.0634 9.45104C13.1416 9.57693 13.2318 9.62203 13.4825 9.67125C13.8164 9.73266 14.0472 9.8124 14.2571 9.93239C14.7026 10.1897 14.9101 10.5922 14.9323 11.244C14.9427 11.55 14.9692 11.6441 15.076 11.7526C15.2741 11.951 15.6267 11.9124 15.7762 11.675C15.8311 11.5855 15.8395 11.5466 15.8453 11.3388C15.8491 11.2102 15.8436 11.0186 15.8303 10.9158ZM15.8362 7.88552C16.8955 8.74208 17.4873 9.95953 17.5753 11.4728C17.6123 12.0687 17.5632 12.2629 17.3529 12.3734C17.1632 12.4759 16.9482 12.4421 16.8007 12.2879C16.703 12.1876 16.6655 12.0504 16.6669 11.8074C16.6712 11.1357 16.5165 10.3855 16.2648 9.86495C15.9736 9.25911 15.5234 8.74354 14.9571 8.36661C14.461 8.03552 13.8045 7.81193 13.168 7.75625C12.7551 7.7201 12.6077 7.65016 12.5284 7.45224C12.4793 7.33385 12.4923 7.12917 12.5499 7.0375C12.6043 6.95292 12.7264 6.85948 12.8128 6.83474C12.9043 6.80807 13.4376 6.85469 13.7272 6.91229C14.518 7.07323 15.2394 7.40417 15.8362 7.88552ZM19.5064 17.3002C19.4768 17.2137 19.4077 17.0803 19.3584 17.0036C19.0475 16.5343 17.3773 15.2272 16.5435 14.7997C16.0673 14.5552 15.7146 14.4736 15.4531 14.5502C15.1718 14.6293 15.0238 14.7602 14.5526 15.3458C14.3627 15.5805 14.1678 15.8004 14.1159 15.835C13.9877 15.924 13.736 15.9956 13.5584 15.9956C13.1464 15.9931 12.3989 15.7263 11.8241 15.3754C11.3776 15.1037 10.8052 14.6169 10.3661 14.1352C9.84797 13.5693 9.49521 13.0703 9.21641 12.5069C8.85625 11.783 8.765 11.3407 8.91547 11.017C8.95245 10.9355 9.00182 10.849 9.02396 10.8218C9.0462 10.7971 9.27812 10.6069 9.53463 10.3993C10.038 9.99906 10.1194 9.90766 10.2131 9.63338C10.3315 9.285 10.2995 8.92922 10.1169 8.57099C9.97625 8.29917 9.6087 7.7062 9.34224 7.32323C8.98948 6.81922 8.1112 5.74198 7.93604 5.59615C7.62026 5.33922 7.21568 5.29474 6.76911 5.46771C6.29797 5.65057 5.41474 6.36214 5.03727 6.85875C4.69682 7.30844 4.56611 7.62713 4.54635 8.04719C4.5291 8.39307 4.55869 8.53635 4.74126 8.97865C6.16969 12.4476 8.30115 15.2173 11.2295 17.4163C12.7591 18.5652 14.3454 19.4398 15.9909 20.0378C16.9505 20.3861 17.3674 20.4034 17.8584 20.1169C18.0656 19.9933 18.5787 19.467 18.8649 19.0841C19.3386 18.4466 19.5138 18.1526 19.5631 17.9179C19.5977 17.7573 19.5705 17.4781 19.5064 17.3002ZM18.8756 9.47943C19.1761 10.2622 19.3202 10.9643 19.3518 11.8203C19.3568 11.9894 19.3545 12.2992 19.3435 12.5091C19.3207 12.9114 19.2989 12.9913 19.1831 13.0977C18.9969 13.2724 18.6341 13.2307 18.4965 13.0203C18.4246 12.9073 18.4145 12.8246 18.4284 12.3546C18.4683 10.9642 18.1871 9.87557 17.5097 8.78703C16.7003 7.48109 15.4895 6.6013 13.915 6.17094C13.5135 6.06135 13.1751 5.99458 12.6489 5.92375C12.306 5.87891 12.231 5.8599 12.1464 5.80781C11.8908 5.64411 11.8874 5.22964 12.1422 5.06343C12.2736 4.9757 12.3706 4.97178 12.7992 5.02667C14.0558 5.1837 15.1772 5.55714 16.0986 6.12141C16.759 6.52635 17.1755 6.89021 17.7116 7.5274C18.2786 8.20698 18.5789 8.70948 18.8756 9.47943Z"
+                            fill="#fdbf00"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer__phone">
+                <a class="footer__phone-number" href="tel:+375293043078">+375(29)3043078
+                    <svg class="footer__icon-link" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 12.5C0 19.4035 5.59646 25 12.5 25C19.4035 25 25 19.4035 25 12.5C25 5.59646 19.4035 0 12.5 0C5.59646 0 0 5.59646 0 12.5ZM10.2083 18.2292L10.421 15.0429L10.4208 15.0427L16.2171 9.81198C16.4715 9.5862 16.1616 9.47609 15.8239 9.68088L8.67047 14.1939L5.58057 13.2295C4.91328 13.0252 4.90849 12.5667 5.73036 12.237L17.771 7.59422C18.3209 7.34453 18.8517 7.7263 18.6418 8.56797L16.5912 18.2308C16.4481 18.9174 16.0332 19.0817 15.4583 18.7645L12.3347 16.4567L10.8333 17.9167C10.8286 17.9212 10.8239 17.9258 10.8192 17.9304C10.6513 18.0939 10.5123 18.2292 10.2083 18.2292Z"
+                            fill="#fdbf00"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer__title">Оплата:</div>
+            <a class="footer__pay-link" href="">
+                <img class="footer__image-pay" src="../images/logo_payments2.png">
+            </a>
+        </div>
+    </div>
+    <div class="footer__copyrigth">developer by Косьянчик Д.Е.</div>
+</footer>
+</body>
+
+</html>

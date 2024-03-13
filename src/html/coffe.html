@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>pizza</title>
+</head>
+
+<body>
+    @@include('blocks/header.html')
+    <div class="wrapper">
+        <main>
+            <section class="product">
+                <div class="product__container-title">
+                    <div class="container">
+                        <h3 class="product__title-line">КОФЕ</h3>
+                    </div>
+                </div>
+                <div class="container">
+
+                    <div class="product__container">
+                        <div class="product__card">
+                            <a href="#">
+                                <img class="product__img" src='../images/americano.webp' alt="cola">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">Кофе Американо</h3>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class=" product__price ">2.50</div>
+                                <span class=" product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='2.40' style="display:none">2.50</div>
+                                <span class="product__weigth" data-weigth="0.5">/0.25 л.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="product__card">
+                            <a href="#">
+                                <img class="product__img" src='../images/capuchino.webp' alt="fanta">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title"> Кофе Капучино</h3>
+                            </div>
+                            <div class="product__add-ingridient">
+                                <div class="product__ingridient-container"></div>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class=" product__price ">2.50</div>
+                                <span class=" product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='2.50' style="display:none">2.50</div>
+                                <span class="product__weigth" data-weigth="0.5">/0.25 л.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="product__card">
+                            <a href="#">
+                                <img class="product__img" src='../images/caramel-capuchino.webp' alt="sprite">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">Кофе Карамельный капучино</h3>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class=" product__price ">2.50</div>
+                                <span class=" product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='2.50' style="display:none">2.50</div>
+                                <span class="product__weigth" data-weigth="0.5">/0.25 л.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="product__card">
+                            <a href="#">
+                                <img class="product__img" src='../images/latte.webp' alt="bonaqua">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">Кофе Латте</h3>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class=" product__price ">1.70</div>
+                                <span class=" product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='1.70' style="display:none">1.70</div>
+                                <span class="product__weigth" data-weigth="0.5">/0.5 л.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="product__card">
+                            <a href="#">
+                                <img class="product__img" src='../images/coconun-latte.webp' alt="ТОНІК">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">Кофе Кокосовый Латте</h3>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class=" product__price ">3.70</div>
+                                <span class=" product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='3.70' style="display:none">3.70</div>
+                                <span class="product__weigth" data-weigth="0.5">/0.25 л.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="product__card">
+                            <a href="#">
+                                <img class="product__img" src='../images/nut-latte.webp' alt="SANDORA">
+                            </a>
+                            <div class="product__content">
+                                <h3 class="product__title">Кофе Ореховый латте</h3>
+                            </div>
+                            <div class="product__single-variation">
+                                <div class=" product__price ">5.40</div>
+                                <span class=" product__currency">руб.</span>
+                                <div class="product__price-price" data-reset='5.40' style="display:none">5.40</div>
+                                <span class="product__weigth" data-weigth="1">/0.25 л.</span>
+                            </div>
+                            <div class="product__counter">
+                                <div class="product__count-minus" data-action="minus">-</div>
+                                <div class="product__counter-number" data-counter>1</div>
+                                <div class="product__count-plus" data-action="plus">+</div>
+                                <button class="product__add-tocart">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    @@include('blocks/footer.html')
+</body>
+
+</html>

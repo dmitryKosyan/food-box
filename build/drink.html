@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
     <title>pizza</title>
 </head>
@@ -14,9 +17,14 @@
     <header class="header">
     <div class="container">
         <div class="header__inner">
+            <div class="header__burger">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+            </div>
             <a class="header-logo-img" href="../index.html">
                 <div>
-                    <svg width="140" height="80" id="FoodBox__logo" data-name="FoodBox _logo"
+                    <svg class="header__logo" width="140" height="80" id="FoodBox__logo" data-name="FoodBox _logo"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408.3 179.88">
                         <defs>
                             <style>
@@ -129,19 +137,22 @@
                             <a class="header__link" href="../pizza.html">пицца</a>
                         </li>
                         <li class="header__navigation-item" id="sushi">
-                            <a class="header__link" href="../sushi.html">суши</a>
+                            <a class="header__link" href="../foods.html">закуски</a>
                         </li>
                         <li class="header__navigation-item" id="drink">
+                            <a class="header__link" href="../deserts.html">десерты</a>
+                        </li>
+                        <li class="header__navigation-item" id="salat">
+                            <a class="header__link" href="../coffe.html">кофе</a>
+                        </li>
+                        <li class="header__navigation-item" id="salat">
                             <a class="header__link" href="../drink.html">напитки</a>
                         </li>
                         <li class="header__navigation-item" id="salat">
-                            <a class="header__link" href="../salats.html">закуски и салаты</a>
+                            <a class="header__link" href="../sale.html">акции</a>
                         </li>
                         <li class="header__navigation-item" id="salat">
-                            <a class="header__link" href="../salats.html">доставка и оплата</a>
-                        </li>
-                        <li class="header__navigation-item" id="salat">
-                            <a class="header__link" href="../salats.html">блог</a>
+                            <a class="header__link" href="../blog.html">блог</a>
                         </li>
                     </ul>
                 </nav>
@@ -149,6 +160,7 @@
             </div>
             <div class="header__basket-wrap">
                 <img class="header__bascet-img" src="../images/cart.svg" alt="logo">
+                <img class="header__bascet-img2" src="../images/cart2.svg" alt="logo">
                 <div class="header__basket-text ">Корзина</div>
                 <div class="header__basket-count ">0</div>
             </div>
@@ -161,10 +173,13 @@
     <div class="wrapper">
         <main>
             <section class="product">
-                <div class="container">
-                    <div class="product__container-title">
-                        <h3 class="product__title-line">САЛАТЫ</h3>
+                <div class="product__container-title">
+                    <div class="container">
+                        <h3 class="product__title-line">НАПИТКИ</h3>
                     </div>
+                </div>
+                <div class="container">
+
                     <div class="product__container">
                         <div class="product__card">
                             <a href="#">
@@ -343,6 +358,7 @@
             </a>
         </div>
     </div>
+    <div class="footer__copyrigth">developer by Косьянчик Д.Е.</div>
 </footer>
 </body>
 

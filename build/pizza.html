@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="../css/index.css">
     <title>pizza</title>
 </head>
@@ -14,9 +18,14 @@
     <header class="header">
     <div class="container">
         <div class="header__inner">
+            <div class="header__burger">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+            </div>
             <a class="header-logo-img" href="../index.html">
                 <div>
-                    <svg width="140" height="80" id="FoodBox__logo" data-name="FoodBox _logo"
+                    <svg class="header__logo" width="140" height="80" id="FoodBox__logo" data-name="FoodBox _logo"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408.3 179.88">
                         <defs>
                             <style>
@@ -129,19 +138,22 @@
                             <a class="header__link" href="../pizza.html">пицца</a>
                         </li>
                         <li class="header__navigation-item" id="sushi">
-                            <a class="header__link" href="../sushi.html">суши</a>
+                            <a class="header__link" href="../foods.html">закуски</a>
                         </li>
                         <li class="header__navigation-item" id="drink">
+                            <a class="header__link" href="../deserts.html">десерты</a>
+                        </li>
+                        <li class="header__navigation-item" id="salat">
+                            <a class="header__link" href="../coffe.html">кофе</a>
+                        </li>
+                        <li class="header__navigation-item" id="salat">
                             <a class="header__link" href="../drink.html">напитки</a>
                         </li>
                         <li class="header__navigation-item" id="salat">
-                            <a class="header__link" href="../salats.html">закуски и салаты</a>
+                            <a class="header__link" href="../sale.html">акции</a>
                         </li>
                         <li class="header__navigation-item" id="salat">
-                            <a class="header__link" href="../salats.html">доставка и оплата</a>
-                        </li>
-                        <li class="header__navigation-item" id="salat">
-                            <a class="header__link" href="../salats.html">блог</a>
+                            <a class="header__link" href="../blog.html">блог</a>
                         </li>
                     </ul>
                 </nav>
@@ -149,6 +161,7 @@
             </div>
             <div class="header__basket-wrap">
                 <img class="header__bascet-img" src="../images/cart.svg" alt="logo">
+                <img class="header__bascet-img2" src="../images/cart2.svg" alt="logo">
                 <div class="header__basket-text ">Корзина</div>
                 <div class="header__basket-count ">0</div>
             </div>
@@ -161,10 +174,13 @@
     <div class="wrapper">
         <main>
             <section class="product">
-                <div class="container">
-                    <div class="product__container-title">
+                <div class="product__container-title">
+                    <div class="container">
                         <h3 class="product__title-line">ПИЦЦА</h3>
                     </div>
+                </div>
+                <div class="container">
+
                     <div class="product__container">
                         <div class="product__card">
                             <a href="#">
@@ -175,7 +191,7 @@
                             </div>
                             <a class="product__discription-wrap">
                                 Описание товара
-                                <svg width="12" height="6">
+                                <svg width="16" height="10">
                                     <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
                                 </svg>
                                 <div class="product__discription">
@@ -189,7 +205,8 @@
                                         25см
                                     </li>
                                     <li class="product__variable-item" data-price="33sm" data-value='13.40'
-                                        data-weigth="600">33см</li>
+                                        data-weigth="600">33см
+                                    </li>
                                     <li class="product__variable-item" data-price="40sm" data-value='16.80'
                                         data-weigth="900">40см
                                     </li>
@@ -228,7 +245,7 @@
                             </div>
                             <a class="product__discription-wrap">
                                 Описание товара
-                                <svg width="12" height="6">
+                                <svg width="16" height="10">
                                     <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
                                 </svg>
                                 <div class="product__discription">
@@ -242,7 +259,8 @@
                                         25см
                                     </li>
                                     <li class="product__variable-item  " data-price="33sm" data-value='16.70'
-                                        data-weigth="620">33см</li>
+                                        data-weigth="620">33см
+                                    </li>
                                     <li class="product__variable-item  " data-price="40sm" data-value='18.20'
                                         data-weigth="920">40см
                                     </li>
@@ -281,7 +299,7 @@
                             </div>
                             <a class="product__discription-wrap">
                                 Описание товара
-                                <svg width="12" height="6">
+                                <svg width="16" height="10">
                                     <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
                                 </svg>
                                 <div class="product__discription">
@@ -295,7 +313,8 @@
                                         25см
                                     </li>
                                     <li class="product__variable-item  " data-price="33sm" data-value='20'
-                                        data-weigth="620">33см</li>
+                                        data-weigth="620">33см
+                                    </li>
                                     <li class="product__variable-item  " data-price="33sm" data-value='22.50'
                                         data-weigth="920">40см
                                     </li>
@@ -333,7 +352,7 @@
                             </div>
                             <a class="product__discription-wrap">
                                 Описание товара
-                                <svg width="12" height="6">
+                                <svg width="16" height="10">
                                     <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
                                 </svg>
                                 <div class="product__discription">
@@ -385,7 +404,7 @@
                             </div>
                             <a class="product__discription-wrap">
                                 Описание товара
-                                <svg width="12" height="6">
+                                <svg width="16" height="10">
                                     <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
                                 </svg>
                                 <div class="product__discription">
@@ -399,7 +418,8 @@
                                         25см
                                     </li>
                                     <li class="product__variable-item  " data-price="33sm" data-value='19'
-                                        data-weigth="600">33см</li>
+                                        data-weigth="600">33см
+                                    </li>
                                     <li class="product__variable-item  " data-price="40sm" data-value='21'
                                         data-weigth="940">40см
                                     </li>
@@ -437,7 +457,7 @@
                             </div>
                             <a class="product__discription-wrap">
                                 Описание товара
-                                <svg width="12" height="6">
+                                <svg width="16" height="10">
                                     <path d="M14 0.5L7.5 7L1 0.5" stroke="white"></path>
                                 </svg>
                                 <div class="product__discription">
@@ -451,7 +471,8 @@
                                         25см
                                     </li>
                                     <li class="product__variable-item  " data-price="33sm" data-value='18.70'
-                                        data-weigth="520">33см</li>
+                                        data-weigth="520">33см
+                                    </li>
                                     <li class="product__variable-item  " data-price="40sm" data-value='21'
                                         data-weigth="820">40см
                                     </li>
@@ -533,6 +554,7 @@
             </a>
         </div>
     </div>
+    <div class="footer__copyrigth">developer by Косьянчик Д.Е.</div>
 </footer>
 </body>
 
