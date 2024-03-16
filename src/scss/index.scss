@@ -886,13 +886,15 @@ textarea {
             line-height: 25px;
         }
 
-        &__pizerii {
-            width: 450px;
-
+        &__text-about {
+            padding: 0 10px;
         }
 
         &__wrapp {
-            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
         }
 
         &__text {
@@ -901,17 +903,7 @@ textarea {
     }
 }
 
-@media (max-width:812px) {
-    .about {
 
-
-        &__pizerii {
-            width: 675px;
-
-        }
-
-    }
-}
 
 @media (max-width:700px) {
     .container-title {
@@ -920,14 +912,14 @@ textarea {
     }
 
     .menu__link-img {
-        width: 150px;
-        height: 150px;
-        left: 120px;
+        width: 100px;
+        height: 100px;
+        left: 157px;
     }
 
     .menu__link-name {
-        font-size: 28px;
-        top: 94px;
+        font-size: 24px;
+        top: 53px;
         width: 300px;
     }
 
@@ -937,6 +929,23 @@ textarea {
 
     .menu__card-link:nth-child(4) {
         top: 0;
+    }
+
+}
+
+@media (max-width:516px) {
+    .about {
+        &__pizerii {
+            width: 450px;
+        }
+    }
+}
+
+@media (max-width:476px) {
+    .about {
+        &__pizerii {
+            width: 340px;
+        }
     }
 
 }

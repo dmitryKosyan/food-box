@@ -32,15 +32,15 @@ gulp.task('sass:dev', function () {
         .pipe(sourceMap.write())
         .pipe(gulp.dest('./build/css/'))
 })
-gulp.task('images:dev', function () {
-    return gulp.src('./src/images/**/*')
-        .pipe(imagemin({ verbase: true }))
-        .pipe(gulp.dest('./build/images'))
-})
-gulp.task('fonts:dev', function () {
-    return gulp.src('./src/fonts/**/*')
-        .pipe(gulp.dest('./build/fonts'))
-})
+// gulp.task('images:dev', function () {
+//     return gulp.src('./src/images/**/*')
+//         .pipe(imagemin({ verbase: true }))
+//         .pipe(gulp.dest('./build/images'))
+// })
+// gulp.task('fonts:dev', function () {
+//     return gulp.src('./src/fonts/**/*')
+//         .pipe(gulp.dest('./build/fonts'))
+// })
 gulp.task('server:dev', function () {
     return gulp.src('./build')
         .pipe(serverLive({
@@ -48,12 +48,12 @@ gulp.task('server:dev', function () {
             open: true
         }))
 })
-gulp.task('clean:dev', function (done) {
-    if (fs.existsSync('./build')) {
-        return gulp.src('./build', { read: false }).pipe(clean())
-    }
-    done()
-})
+// gulp.task('clean:dev', function (done) {
+//     if (fs.existsSync('./build')) {
+//         return gulp.src('./build', { read: false }).pipe(clean())
+//     }
+//     done()
+// })
 gulp.task('js:dev', function () {
     return gulp.src('./srs/js/*.js')
 
@@ -64,7 +64,7 @@ gulp.task('js:dev', function () {
 gulp.task('watch:dev', function () {
     gulp.watch('./src/scss/**/*.scss', gulp.parallel('sass:dev'))
     gulp.watch('./src/**/*.html', gulp.parallel('html:dev'))
-    gulp.watch('./src/images/**/*', gulp.parallel('images:dev'))
-    gulp.watch('./src/fonts/**/*', gulp.parallel('fonts:dev'))
+    // gulp.watch('./src/images/**/*', gulp.parallel('images:dev'))
+    // gulp.watch('./src/fonts/**/*', gulp.parallel('fonts:dev'))
     gulp.watch('./src/js/**/*.js', gulp.parallel('js:dev'))
 })

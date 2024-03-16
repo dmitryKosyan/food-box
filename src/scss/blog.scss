@@ -93,3 +93,30 @@
         margin-top: 30px;
     }
 }
+
+@media (max-width:1132px) {
+    .blog {
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+
+@media(max-width:950px) {
+    .product__title-line {
+        font-size: 24px;
+    }
+
+    .post {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+
+        &__wrap {
+            display: fle;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+}

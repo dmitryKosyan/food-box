@@ -9,7 +9,7 @@
     }
 
     &__sale {
-        padding: 15px 0;
+        padding: 15px 15px;
     }
 
     &__sale-img {
@@ -32,6 +32,7 @@
         font-weight: 400;
         color: $wite;
         line-height: 34px;
+
     }
 
     &__sale-link {
@@ -43,6 +44,7 @@
         font-size: 40px;
         font-weight: 600;
         color: $wite;
+        padding-left: 15px;
     }
 
     &__sale-description {
@@ -50,9 +52,60 @@
         font-size: 18px;
         line-height: 24px;
         color: $wite;
+        padding: 15px;
     }
 
     &__sale-info {
         margin-bottom: 40px;
+    }
+}
+
+@media (max-width:950px) {
+    .section__sale-img {
+        width: 499px;
+        height: 200px;
+
+    }
+
+    .section__sale-text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .product__title-line {
+        font-size: 30px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width:880px) {
+    .section__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section__sale-img {
+        width: 540px;
+        height: 250px;
+    }
+}
+
+@media (max-width:577px) {
+    .section__sale-img {
+        width: 340px;
+        height: 170px;
+        object-fit: cover;
+    }
+
+    .section__sale {
+        padding: 5px 5px;
+    }
+
+    .section__sale-text {
+        line-height: 24px;
+    }
+
+    .section__sale-title {
+        font-size: 24px;
     }
 }
