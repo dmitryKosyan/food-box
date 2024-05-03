@@ -64,7 +64,7 @@
         font-weight: 800;
         color: $black;
         line-height: 50px;
-        max-width: 260px;
+        width: 100%;
         margin-bottom: 20px;
     }
 
@@ -106,7 +106,10 @@
 @media(max-width:950px) {
     .product__title-line {
         font-size: 24px;
+        line-height: 24px;
     }
+
+
 
     .post {
         &__wrapper {
@@ -114,9 +117,15 @@
         }
 
         &__wrap {
-            display: fle;
+            display: flex;
+            justify-content: center;
             flex-wrap: wrap;
             gap: 20px;
         }
+
+        &__aside-block {
+            width: 100%;
+        }
+
     }
 }

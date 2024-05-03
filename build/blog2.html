@@ -163,11 +163,62 @@
                 <img class="header__bascet-img2" src="../images/cart2.svg" alt="logo">
                 <div class="header__basket-text ">Корзина</div>
                 <div class="header__basket-count ">0</div>
+                <div class="cart-modal">
+                    <div class="cart-wrapper">
+                        <div class="cart-wrapper-item">
+                            <!-- cart content-->
+                        </div>
+                        <form class="form" id="form">
+                            <div class="form-input">
+                                <input type="text" name="name" value="" placeholder="имя">
+                                <input type="text" name="phone" value="" placeholder="номер телефона">
+                                <textarea type="text" name="adress" value="" placeholder="адресс доставки"></textarea>
+                            </div>
+                            <div class="payment-wrap">
+                                <ul class="payment">
+                                    <li class="payment-method">
+                                        <label for="p1" class="payment-input-lable">
+                                            <input type="checkbox" name="payment" class="payment-product-add-checkbox"
+                                                id="p1" checked>
+                                            <span class="payment-check-style"></span>
+                                            оплата картой
+                                        </label>
+                                    </li>
+                                    <li class="payment-method">
+                                        <label for="p2" class="payment-input-lable">
+                                            <input type="checkbox" class="payment-product-add-checkbox" id="p2">
+                                            <span class="payment-check-style"></span>
+                                            оплата наличными
+                                        </label>
+                                    </li>
+                                </ul>
+                                <div class="total-price-all">
+                                    <h4 class="total-price-h4">к оплате:<span class="total-price-el" id="cardPrice">0
+                                            руб.</span></h4>
+                                </div>
+                                <div class="min-cost-order">
+                                    минимальная сумма заказа:<span>14.90 руб.</span>
+                                </div>
+                                <div class="price-sale">расчет акционных пицц рассчитывается оператором</div>
+                                <button type="submit" class="order-button">оформить заказ</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="lds-roller">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
-
-    </div>
     </div>
 </header>
     <div class="wrapper">
@@ -218,26 +269,27 @@
                             <div class="post__aside-block">
                                 <h3 class="post__aside-title">смотрите также</h3>
                             </div>
-                            <div class="post__card">
-                                <a href="./blog1.html" class="post__card-link">
-                                    <img class="post__card-img" src="../images/blog1.jpg" alt="blog-img">
+                            <div class="post__wrap">
+                                <div class="post__card">
+                                    <a href="./blog1.html" class="post__card-link">
+                                        <img class="post__card-img" src="../images/blog1.jpg" alt="blog-img">
 
-                                    <h2 class="post__card-title">
-                                        Выбираем напитки к пицце: что пьют в других странах?
-                                    </h2>
-                                </a>
+                                        <h2 class="post__card-title">
+                                            Выбираем напитки к пицце: что пьют в других странах?
+                                        </h2>
+                                    </a>
 
-                            </div>
-                            <div class="post__card">
-                                <a href="./blog3.html" class="post__card-link">
-                                    <img class="post__card-img" src="../images/blog2.jpg" alt="blog-img">
+                                </div>
+                                <div class="post__card">
+                                    <a href="./blog3.html" class="post__card-link">
+                                        <img class="post__card-img" src="../images/blog2.jpg" alt="blog-img">
 
-                                    <h2 class="post__card-title">
-                                        Идеальное решение вашего вечера — заказать пиццу с доставкой на дом и не
-                                        готовить
-                                    </h2>
-                                </a>
-
+                                        <h2 class="post__card-title">
+                                            Идеальное решение вашего вечера — заказать пиццу с доставкой на дом и не
+                                            готовить
+                                        </h2>
+                                    </a>
+                                </div>
                             </div>
                         </aside>
                     </div>
